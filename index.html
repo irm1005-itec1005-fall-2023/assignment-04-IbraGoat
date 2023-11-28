@@ -23,8 +23,39 @@
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
+<head>
+  <title>Todo List</title>
+</head>
 <body>
-
+  <h1>Todo List</h1>
+  <div class="container">
+    <form>
+      <input type="text" placeholder="Add todo...">
+      <button type="submit">Add</button>
+    </form>
+    <ul class="todos">
+      <li>
+        <input type="checkbox">
+        <p>Todo 1</p>
+        <button class="deleteButton">Delete</button>
+        <button class="editButton">Edit</button>
+      </li>
+      <li>
+        <input type="checkbox">
+        <p>Todo 2</p>
+        <button class="deleteButton">Delete</button>
+        <button class="editButton">Edit</button>
+      </li>
+      <li>
+        <input type="checkbox">
+        <p>Todo 3</p>
+        <button class="deleteButton">Delete</button>
+        <button class="editButton">Edit</button>
+      </li>
+    </ul>
+  </div>
+</body>
+  
   <!--
 
     Assignment 04 - Finishing a Todo List App

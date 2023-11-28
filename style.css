@@ -54,3 +54,156 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* style.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.todos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todos li {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: 10px;
+}
+
+.todos li:last-child {
+  border-bottom: none;
+}
+
+.todos li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todos li button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px 20px;
+}
+
+.todos li button:hover {
+  background-color: #da190b;
+}
+
+.edit-form {
+  display: none;
+  margin-left: auto;
+}
+
+.edit-form input[type="text"] {
+  margin-right: 10px;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #2196F3;
+  margin-right: 10px;
+}
+
+/* style.css */
+.todos li {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* style.css */
+.todos li:hover {
+  background-color:#a8dadc;
+  transition: background-color 0.5s ease-in-out;
+}
+/* style.css */
+.todos li.done {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* style.css */
+.deleteButton {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
