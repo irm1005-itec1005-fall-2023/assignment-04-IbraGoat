@@ -59,6 +59,9 @@ main {
 * {
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -69,9 +72,11 @@ body {
   animation: gradient 15s ease infinite;
 }
 
+
 h1 {
   text-align: center;
 }
+
 
 .container {
   margin: 0 auto;
@@ -79,15 +84,18 @@ h1 {
   padding: 20px;
 }
 
+
 form {
   display: flex;
   margin-bottom: 20px;
 }
 
+
 input[type="text"] {
   flex: 1;
   padding: 10px;
 }
+
 
 button[type="submit"] {
   background-color: #4CAF50;
@@ -97,15 +105,18 @@ button[type="submit"] {
   padding: 10px 20px;
 }
 
+
 button[type="submit"]:hover {
   background-color: #3e8e41;
 }
+
 
 .todos {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 
 .todos li {
   align-items: center;
@@ -114,13 +125,16 @@ button[type="submit"]:hover {
   padding: 10px;
 }
 
+
 .todos li:last-child {
   border-bottom: none;
 }
 
+
 .todos li input[type="checkbox"] {
   margin-right: 10px;
 }
+
 
 .todos li button {
   background-color: #f44336;
@@ -131,18 +145,22 @@ button[type="submit"]:hover {
   padding: 10px 20px;
 }
 
+
 .todos li button:hover {
   background-color: #da190b;
 }
+
 
 .edit-form {
   display: none;
   margin-left: auto;
 }
 
+
 .edit-form input[type="text"] {
   margin-right: 10px;
 }
+
 
 .edit-form button[type="submit"] {
   background-color: #2196F3;
@@ -150,10 +168,13 @@ button[type="submit"]:hover {
 }
 
 
+
+
 .todos li {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -167,14 +188,18 @@ button[type="submit"]:hover {
 }
 
 
+
+
 .todos li:hover {
   background-color:#a8dadc;
   transition: background-color 0.5s ease-in-out;
 }
 
+
 .todos li.done {
   animation: bounce 0.5s ease-in-out;
 }
+
 
 @keyframes bounce {
   0% {
@@ -189,9 +214,12 @@ button[type="submit"]:hover {
 }
 
 
+
+
 .deleteButton {
   animation: shake 0.5s ease-in-out;
 }
+
 
 @keyframes shake {
   0% {
