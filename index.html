@@ -6,8 +6,7 @@
   <title>Assignment 04 - Finishing a Todo List App</title>
 
   <!-- Set the charset we're using to UTF-8 -->
-  <meta charset="utf-8" />
-
+  <meta charset="utf-8" />  
   <!-- Set the screens default zoom / scale to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -23,22 +22,37 @@
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
+
 <body>
-
-  <!--
-
-    Assignment 04 - Finishing a Todo List App
-
-    Instructions:
-
-    Important checklist:
-
-    - Are users able to create and delete to do list items?
-    - Have you set a favicon? (included - but it's a rocket)
-    - Has a team member conducted a code review and left a GitHub Issue in your repo?
-    - Have you conducted a code review and left a GitHub Issue on your team member's repo?
-
-  -->
+    <h1>Todo List</h1>
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Add todo...">
+        <button type="submit">Add</button>
+      </form>
+      <ul class="todos">
+        <li>
+          <input type="checkbox">
+          <p>Todo 1</p>
+          <button class="deleteButton">Delete</button>
+          <button class="editButton">Edit</button>
+        </li>
+        <li>
+          <input type="checkbox">
+          <p>Todo 2</p>
+          <button class="deleteButton">Delete</button>
+          <button class="editButton">Edit</button>
+        </li>
+        <li>
+          <input type="checkbox">
+          <p>Todo 3</p>
+          <button class="deleteButton">Delete</button>
+          <button class="editButton">Edit</button>
+        </li>
+      </ul>
+    </div>
+</body>
+  
 
   <main>
     <div id="app"></div>
