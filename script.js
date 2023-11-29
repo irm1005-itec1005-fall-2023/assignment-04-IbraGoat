@@ -41,7 +41,7 @@ function inititialise() {
 //
 inititialise();
 
-// script.js
+
 const form = document.querySelector('form');
 const input = document.querySelector('input[type="text"]');
 const ul = document.querySelector('ul');

@@ -55,7 +55,7 @@ main {
   border-width: 0;
 }
 
-/* style.css */
+
 * {
   box-sizing: border-box;
 }
@@ -64,6 +64,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, lightblue, lavender, lightpink, beige);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 h1 {
@@ -146,7 +149,7 @@ button[type="submit"]:hover {
   margin-right: 10px;
 }
 
-/* style.css */
+
 .todos li {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -163,12 +166,12 @@ button[type="submit"]:hover {
   }
 }
 
-/* style.css */
+
 .todos li:hover {
   background-color:#a8dadc;
   transition: background-color 0.5s ease-in-out;
 }
-/* style.css */
+
 .todos li.done {
   animation: bounce 0.5s ease-in-out;
 }
@@ -185,7 +188,7 @@ button[type="submit"]:hover {
   }
 }
 
-/* style.css */
+
 .deleteButton {
   animation: shake 0.5s ease-in-out;
 }
@@ -205,5 +208,16 @@ button[type="submit"]:hover {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
